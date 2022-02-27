@@ -5,13 +5,11 @@
   --main-blue: #45567d;
   --main-gray: #303841;
 }
-
 /* Base reset */
 * {
   margin: 0;
   padding: 0;
 }
-
 /* box-sizing and font sizing */
 *,
 *::before,
@@ -28,7 +26,6 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.8rem; /* 18px */
@@ -42,11 +39,9 @@ h2 {
   font-weight: 700;
   text-align: center;
 }
-
 h1 {
   font-size: 4.2rem;
 }
-
 h2 {
   font-size: 3.2rem;
 }
@@ -62,21 +57,17 @@ a {
   text-decoration: none;
   color: aqua;
 }
-
 img {
   display: block;
   width: 100%;
+  height: 75%;
 }
-
 .myimg {
   width: 300px;
   height: 300px;
   object-fit: cover;
   border-radius: 50%;
 }
-
-/* Welcome section */
-
 .welcome-section {
   display: flex;
   flex-direction: column;
@@ -86,84 +77,49 @@ img {
   height: 100vh;
   background-color: #000;
 }
-
 .welcome-section > p {
   font-size: 3rem;
   font-weight: 200;
   font-style: italic;
   color: #c71585;
 }
-
-/* Projects section */
-
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
   background: var(--main-blue);
 }
-
 .projects-section-header {
   max-width: 640px;
   margin: 0 auto 6rem auto;
   border-bottom: 0.2rem solid var(--main-white);
 }
-
-@media (max-width: 28.75em) {
-  .projects-section-header {
-    font-size: 4rem;
-  }
-}
-
-/* "Automagic" image grid using no media queries */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
-}
-
 .project {
   background: var(--main-gray);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   border-radius: 2px;
 }
-
 .code {
   color: var(--main-gray);
   transition: color 0.3s ease-out;
 }
-
 .project:hover .code {
   color: #c71585;
 }
-
-.project-image {
-  height: calc(100% - 6.8rem);
-  width: 100%;
-  object-fit: cover;
-}
-
 .project-title {
   font-size: 2rem;
   padding: 2rem 0.5rem;
 }
-
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
   border-radius: 2px;
 }
-
-/* Work and Education Section */
 .work-education {
   background-color: #1f1f1f;
 }
-
-/* Contact section */
-
+.work-education h2{
+  border-bottom: 0.2rem solid var(--main-white);
+}
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -175,15 +131,12 @@ img {
   padding: 0 2rem;
   background: var(--main-gray);
 }
-
 .contact-section-header > h2 {
   font-size: 6rem;
 }
-
 .contact-section-header > p {
   font-style: italic;
 }
-
 .contact-links {
   display: flex;
   justify-content: center;
@@ -192,19 +145,14 @@ img {
   margin-top: 4rem;
   flex-wrap: wrap;
 }
-
 .contact-details {
   font-size: 2.4rem;
   text-shadow: 2px 2px 1px #1f1f1f;
   transition: transform 0.3s ease-out;
 }
-
 .contact-details:hover {
   transform: translateY(8px);
 }
-
-/* Footer */
-
 footer {
   font-weight: 300;
   display: flex;
@@ -213,29 +161,24 @@ footer {
   background: var(--main-gray);
   border-top: 4px solid #c71585;
 }
-
 footer > p {
   margin: 2rem;
 }
-
 #link {
   color: #c71585;
   text-decoration: underline;
 }
-
 @media (max-width: 28.75em) {
   footer {
     flex-direction: column;
     text-align: center;
   }
 }
-
 @media (max-width: 28.75em) {
   .contact-section-header > h2 {
     font-size: 4rem;
   }
 }
-
 @media (max-width: 30.625em) {
   .projects-section {
     padding: 6rem 1rem;
@@ -245,7 +188,11 @@ footer > p {
     grid-template-columns: 1fr;
   }
 }
-
+@media (max-width: 28.75em) {
+  .projects-section-header {
+    font-size: 4rem;
+  }
+}
 /* A few media query to set some font sizes at different screen sizes.
  * This helps automate a bit of responsiveness.
  * The trick is to use the rem unit for size values, margin and padding.
