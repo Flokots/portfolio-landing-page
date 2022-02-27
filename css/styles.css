@@ -36,7 +36,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  background:teal;
+  background: teal;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
@@ -157,7 +157,7 @@ img {
 .work-education {
   background-color: #1f1f1f;
 }
-.work-education h2{
+.work-education h2 {
   border-bottom: 0.2rem solid var(--main-white);
 }
 .contact-section {
