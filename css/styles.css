@@ -101,6 +101,20 @@ img {
   background: var(--main-blue);
 }
 
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-white);
+}
+
+@media (max-width: 28.75em) {
+  .projects-section-header {
+    font-size: 4rem;
+  }
+}
+
+
 /* A few media query to set some font sizes at different screen sizes.
  * This helps automate a bit of responsiveness.
  * The trick is to use the rem unit for size values, margin and padding.
