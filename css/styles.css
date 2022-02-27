@@ -92,6 +92,15 @@ img {
   color: #c71585;
 }
 
+
+/* Projects section */
+
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: var(--main-blue);
+}
+
 /* A few media query to set some font sizes at different screen sizes.
  * This helps automate a bit of responsiveness.
  * The trick is to use the rem unit for size values, margin and padding.
