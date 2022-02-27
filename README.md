@@ -5,10 +5,8 @@ Florence Kotohoyoh
 ### Description ###
 Built with HTML, CSS and Bootstrap.
 ### Project Setup ###
-```
-Fork this repository.
-Clone the repository in your local computer.
-```
+1. Fork this repository.
+2. Clone the repository in your local computer.
 ### Demo ###
 Here's the link to the live site:
 [Florence Kotohoyoh](Flokots.github.io/project-landing-page)
